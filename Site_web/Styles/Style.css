@@ -1,0 +1,147 @@
+html {
+  font-size: 10px; /* px signifie 'pixels': la taille de base pour la police est désormais 10 pixels de haut  */
+  font-family: 'Open Sans', sans-serif; /* cela devrait être le reste du résultat obtenu à partir de Google fonts */
+  background-color: rgb(202, 10, 10);
+}
+
+.body{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.content {
+  background-color: white;
+  border: 5px solid black;
+  width: 800px;
+  margin: 0 auto;
+  padding:20px 20px 20px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+nav {
+  border-bottom: 1px solid black;
+  border: 0.5em solid black;
+  background-color: white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.space1, .framboise {
+  display: block;
+  margin: 0 auto;
+}
+
+button.Button1 {
+  color: red;
+  text-emphasis-color: red;
+}
+
+li.liste1e2 {
+color: aqua;
+}
+li.liste1e1 {
+  color: rgb(0, 255, 0);
+  }
+li.liste1e3 {
+  color: rgb(255, 0, 0);
+  }
+
+button.Button1 {
+color: #000000;
+background-color: #00ffe1;
+}
+
+.navbutton {
+  height: 3em;
+  width: 10em;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.myH1 {
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+
+.divJeuDeMoney {
+  border: 0.5em solid black;
+  height: 450px;
+  margin: 15px;
+}
+
+.JDMbuttonclic {
+  position: relative;
+  border: 0.25em solid black;
+  width: 25%;
+  /** pourcentage par rapport à width 
+    https://jsfiddle.net/a07nyotj/6/
+    https://stackoverflow.com/a/13625843
+  */
+  height: 0;
+  padding-bottom: 25%;
+  left: calc(50% - 12.5%);
+  top: calc(50% - 20%);
+  border-radius: 50%;
+}
+
+.JDMbuttonclic:hover {
+  background-color: #00539F;
+}
+
+.affichagevariablepierre {
+  border: 0.25em solid black;
+  width: 10%;
+  height: 5%;
+  margin-left: 2px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.Questionsrecru {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+}
+
+#ajouterParagraphe {
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: auto;
+}
+
+#terminal {
+  margin: 20px auto;
+}
+
+.log {
+  font-size: small;
+  padding: 2px;
+  margin: 2px;
+}
+
+

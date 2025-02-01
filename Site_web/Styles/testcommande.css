@@ -1,0 +1,41 @@
+html {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: aqua;
+}
+
+nav {
+  border-bottom: 1px solid black;
+  border: 0.5em solid black;
+  background-color: white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+}
+
+.content {
+  background-color: white;
+  border: 0.5em solid black;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.navbutton {
+  height: 3em;
+  width: 10em;
+}
+
+.BTP {
+  height: 3em;
+  width: 15em;
+}
+
+.BTP:hover {
+  background-color: red;
+}
+
+
+
+
+
