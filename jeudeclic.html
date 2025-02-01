@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeu de Clic</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #cible {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        #score {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jeu de Clic</h1>
+    <p>Cliquez sur la cible pour gagner des points !</p>
+    <div id="cible"></div>
+    <div id="score">Score : <span id="scoreValeur">0</span></div>
+
+    <script>
+        let score = 0;
+
+        // Fonction pour déplacer la cible de manière aléatoire
+        function deplacerCible() {
+            const cible = document.getElementById("cible");
+            const maxX = window.innerWidth - cible.clientWidth;
+            const maxY = window.innerHeight - cible.clientHeight;
+
+            const newX = Math.random() * maxX;
+            const newY = Math.random() * maxY;
+
+            cible.style.left = newX + "px";
+            cible.style.top = newY + "px";
+        }
+
+        // Fonction pour gérer le clic sur la cible
+        function clicSurCible() {
+            score++;
+            document.getElementById("scoreValeur").textContent = score;
+            deplacerCible();
+        }
+
+        // Écouter les clics sur la bouton
+        document.getElementById("cible").addEventListener("click", clicSurCible);
+
+        // Déplacer la cible au chargement de la page
+        deplacerCible();
+    </script>
+</body>
+</html>
