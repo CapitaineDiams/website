@@ -59,7 +59,7 @@ BTP.addEventListener("click", TheoremePy);
 let xhrbutton = document.getElementById("xhr");
 let fxhr = new XMLHttpRequest();
 
-function fxhr() {
+function xhr() {
   fxhr.open("POST", "http://91.197.6.229:32382/api/2/call");
   const body = JSON.stringify({
   name: "fs.read",
