@@ -56,3 +56,30 @@ function TheoremePy () {
 
 BTP.addEventListener("click", TheoremePy);
 
+let xhrbutton = document.getElementById("xhr");
+let xhr = new XMLHttpRequest();
+
+function xhr() {
+  xhr.open("POST", "http://91.197.6.229:32382/api/2/call");
+  const body = JSON.stringify({
+  name: "fs.read",
+  key: "ba93d09b84f17642d2b09a50e69a8f6f9854ca5bb7c98f499828bfb44d25624d",
+  username: "admin",
+  arguments:"[\"/home/container/db/speudomc\"]",
+  });
+  xhr.onload = () => {
+  if (xhr.readyState == 4 && xhr.status == 201) {
+    console.log(JSON.parse(xhr.responseText));
+  } else {
+    console.log(`Error: ${xhr.status}`);
+  }
+  };
+xhr.send(body);
+}
+
+
+
+
+
+
+
