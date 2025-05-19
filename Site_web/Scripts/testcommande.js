@@ -77,7 +77,7 @@ function xhr() {
 fxhr.send(body);
 }
 
-xhrbutton.addEventListener("click", fxhr);
+xhrbutton.addEventListener("click", xhr);
 
 
 
