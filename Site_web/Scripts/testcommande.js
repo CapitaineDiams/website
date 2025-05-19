@@ -63,7 +63,7 @@ function xhr() {
   fxhr.open("POST", "http://91.197.6.229:32382/api/2/call");
   const body = JSON.stringify({
   name: "fs.read",
-  key: "ba93d09b84f17642d2b09a50e69a8f6f9854ca5bb7c98f499828bfb44d25624d",
+  key: "",
   username: "admin",
   arguments:"[\"/home/container/db/speudomc\"]",
   });
